@@ -4,28 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>测试网页</title>
+    <title>FF14角色测试</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
+        <div class="lang-switch">
+            <button id="zhBtn" class="lang-btn active">中文</button>
+            <button id="jaBtn" class="lang-btn">日本語</button>
+        </div>
 
         <div id="homeScreen">
-            <h1>欢迎来到我的测试网页</h1>
-            <p class="desc">这是一个简单的性格测试练习网页</p>
+            <h1 id="homeTitle">欢迎来到我的测试网页</h1>
+            <p id="homeDesc" class="desc">这是一个简单的 FF14 角色倾向测试网页。</p>
             <button id="startBtn">开始测试</button>
         </div>
 
-
-
         <div id="quizScreen" class="hidden">
+            <p id="progressText">1 / 16</p>
             <h2 id="questionText">这里之后会显示题目</h2>
+            <p id="resultDesc" class="hidden"></p>
+            <p id="resultCharacter" class="hidden"></p>
+
             <div class="options">
                 <button class="optionBtn">选项A</button>
                 <button class="optionBtn">选项B</button>
             </div>
-            <button id="restatrBtn" class="hidden">再来一次</button>
+
+            <button id="restartBtn" class="hidden">再来一次</button>
         </div>
     </div>
 

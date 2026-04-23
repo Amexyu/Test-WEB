@@ -61,3 +61,49 @@ button:hover {
 .optionBtn{
     width: 100%;
 }
+
+#restartBtn{
+    margin-top: 30px;
+    width: 100%;
+}
+
+#progressText{
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.options.hidden{
+    display: none;
+}
+
+#resultDesc{
+    color: #444;
+    line-height: 1.8;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+#resultCharacter{
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.lang-switch {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.lang-btn {
+    width: auto;
+    padding: 8px 14px;
+    font-size: 14px;
+}
+
+.lang-btn.active {
+    background-color: #2f6fb0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
